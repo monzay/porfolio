@@ -71,9 +71,9 @@ export function HeroSection() {
                 <span className="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0" />
               </a>
               {/* Botón secundario */}
-              <Link href="/introduction"
+              <Link href="/servicios"
                 className="group inline-flex items-center justify-center gap-3 rounded-lg border border-border px-7 py-4 sm:py-3.5 font-mono text-sm text-muted-foreground transition-all duration-300 hover:border-foreground hover:text-foreground hover:bg-secondary/50 active:scale-[0.98]">
-                <span>{t.hero.introBtn}</span>
+                <span>{t.nav.services}</span>
                 <span className="opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">→</span>
               </Link>
             </div>
@@ -101,8 +101,8 @@ export function HeroSection() {
 │╚█████╔╝██║ ╚═╝ ██║    │
 │ ╚════╝ ╚═╝     ╚═╝    │
 │                       │
-│  > experimentos: 12   │
-│  > estado: forjando   │
+│  > experimentos: 4    │
+│  > online             │
 └───────────────────────┘`}</span>
                 <span className="hidden sm:block">{`┌─────────────────────────────────────┐
 │                                     │
@@ -114,7 +114,7 @@ export function HeroSection() {
 │ ╚════╝  ╚═════╝ ╚══════╝╚══════╝    │
 │         Martinez                    │
 │                                     │
-│   > ${t.hero.experiments}: 12          │
+│   > ${t.hero.experiments}: 4           │
 │   > ${t.hero.statusForging}               │
 │   > ${t.hero.lastSpark}               │
 │                                     │
@@ -132,7 +132,7 @@ export function HeroSection() {
             {/* Etiqueta experiencia */}
             <div className="absolute -bottom-3 sm:-bottom-6 -left-2 sm:-left-6 rounded-lg border border-border bg-card glass px-3 sm:px-4 py-1.5 font-mono text-[11px] sm:text-xs text-muted-foreground animate-float"
               style={{ animationDelay: "1s" }}>
-              4 anos exp.
+              4 años exp.
             </div>
 
             <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full bg-primary/5 blur-3xl" />

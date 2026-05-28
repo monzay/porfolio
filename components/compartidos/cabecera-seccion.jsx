@@ -1,7 +1,9 @@
-// Cabecera reutilizable para todas las secciones del portafolio
+import { ScrollReveal } from "./scroll-reveal"
+
+// Encabezado reutilizable para todas las secciones — con Scroll Reveal integrado
 export function CabeceraSeccion({ etiqueta, titulo, descripcion, className = "" }) {
   return (
-    <div className={`space-y-3 animate-fade-in-up ${className}`}>
+    <ScrollReveal efecto="fade-up" className={`space-y-3 ${className}`}>
       <p className="font-mono text-xs uppercase tracking-[0.25em] sm:tracking-[0.35em] text-primary">
         {etiqueta}
       </p>
@@ -13,6 +15,6 @@ export function CabeceraSeccion({ etiqueta, titulo, descripcion, className = "" 
           {descripcion}
         </p>
       )}
-    </div>
+    </ScrollReveal>
   )
 }

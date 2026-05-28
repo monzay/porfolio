@@ -494,6 +494,67 @@
   display: none;
 }
 
+/* ── Scroll Reveal ───────────────────────────────────────────────────────── */
+/* Los elementos empiezan ocultos y se revelan al entrar en el viewport      */
+
+.sr-fade-up {
+  opacity: 0;
+  transform: translateY(32px);
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.65s;
+}
+
+.sr-fade-in {
+  opacity: 0;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.65s;
+}
+
+.sr-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.55s;
+}
+
+.sr-slide-left {
+  opacity: 0;
+  transform: translateX(-36px);
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.65s;
+}
+
+.sr-slide-right {
+  opacity: 0;
+  transform: translateX(36px);
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.65s;
+}
+
+/* Estado visible: la transición se activa al agregar esta clase */
+.sr-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Accesibilidad: usuarios que prefieren movimiento reducido ven todo visible */
+@media (prefers-reduced-motion: reduce) {
+  .sr-fade-up,
+  .sr-fade-in,
+  .sr-scale,
+  .sr-slide-left,
+  .sr-slide-right {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /* Focus styles enhancement */
 :focus-visible {
   outline: 2px solid var(--primary);

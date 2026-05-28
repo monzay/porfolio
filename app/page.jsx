@@ -1,9 +1,8 @@
 import { Header } from "@/components/header"
 import { HeroSection } from "@/components/hero-section"
+import { SobreMi } from "@/components/sobre-mi"
 import { ProjectsGrid } from "@/components/projects-grid"
 import { TechStack } from "@/components/tech-stack"
-import { LabNotes } from "@/components/lab-notes"
-import { Workbench } from "@/components/workbench"
 import { Footer } from "@/components/footer"
 import { CursorGlow } from "@/components/cursor-glow"
 import { generarDatosSitioWeb, generarDatosPersona } from "@/lib/structured-data"
@@ -25,10 +24,9 @@ export default function PaginaInicio() {
         <div className="relative z-10">
           <Header />
           <HeroSection />
+          <SobreMi />
           <ProjectsGrid />
           <TechStack />
-          <LabNotes />
-          <Workbench />
           <Footer />
         </div>
       </main>

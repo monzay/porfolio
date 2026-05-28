@@ -2,6 +2,7 @@
 
 import { useTranslation } from "@/lib/i18n"
 import { CabeceraSeccion } from "./compartidos/cabecera-seccion"
+import { ScrollReveal } from "./compartidos/scroll-reveal"
 
 // Sección de notas del laboratorio (próximamente)
 export function LabNotes() {
@@ -16,9 +17,11 @@ export function LabNotes() {
           descripcion={t.notes.description}
           className="mb-10 sm:mb-14"
         />
-        <div className="flex items-center justify-center rounded-xl border border-dashed border-border/50 bg-card/20 py-20 animate-fade-in-up">
-          <p className="font-mono text-sm text-muted-foreground/50">// próximamente</p>
-        </div>
+        <ScrollReveal efecto="scale" retraso={150}>
+          <div className="flex items-center justify-center rounded-xl border border-dashed border-border/50 bg-card/20 py-20">
+            <p className="font-mono text-sm text-muted-foreground/50">// próximamente</p>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   )
