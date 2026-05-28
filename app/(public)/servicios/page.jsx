@@ -257,53 +257,6 @@ export default function PaginaServicios() {
         </div>
       </section>
 
-      {/* ── CTA ──────────────────────────────────────────────────────────── */}
-      <section className="px-4 sm:px-6 py-20 sm:py-28 border-t border-border/30">
-        <div className="mx-auto max-w-4xl">
-          <ScrollReveal efecto="scale">
-            <div className="relative overflow-hidden rounded-2xl border border-primary/30 bg-primary/5 glass p-10 sm:p-16 text-center">
-              <div className="absolute inset-0 -z-10">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[400px] h-[400px] rounded-full bg-primary/8 blur-3xl" />
-              </div>
-
-              <div className="space-y-6">
-                <p className="font-mono text-xs uppercase tracking-[0.3em] text-primary">
-                  {ts.cta.tagline}
-                </p>
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl text-balance">
-                  {ts.cta.titulo}
-                </h2>
-                <p className="mx-auto max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
-                  {ts.cta.descripcion}
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-                  <a
-                    href={`mailto:${EMAIL_CONTACTO}`}
-                    className="group relative inline-flex items-center justify-center gap-3 overflow-hidden rounded-xl border border-primary bg-primary/10 px-8 py-4 font-mono text-sm text-primary transition-all duration-500 hover:text-primary-foreground active:scale-[0.98]"
-                  >
-                    <span className="relative z-10">{ts.cta.btnEmail}</span>
-                    <ArrowRight className="relative z-10 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                    <span className="absolute inset-0 -translate-x-full bg-primary transition-transform duration-500 group-hover:translate-x-0" />
-                  </a>
-                  <a
-                    href={urlWa}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center gap-3 rounded-xl border border-border px-8 py-4 font-mono text-sm text-muted-foreground transition-all duration-300 hover:border-foreground hover:text-foreground hover:bg-secondary/50 active:scale-[0.98]"
-                  >
-                    {ts.cta.btnWhatsapp}
-                  </a>
-                </div>
-
-                <p className="font-mono text-xs text-muted-foreground/60 pt-2">
-                  {ts.cta.contacto}
-                </p>
-              </div>
-            </div>
-          </ScrollReveal>
-        </div>
-      </section>
 
     </div>
   )

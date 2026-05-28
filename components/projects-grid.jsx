@@ -18,7 +18,7 @@ export function ProjectsGrid() {
           <CabeceraSeccion etiqueta={t.projects.tagline} titulo={t.projects.title} />
         </div>
 
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {proyectos.map((proyecto, indice) => {
             const texto = language === "en" ? proyecto.en : proyecto.es
 

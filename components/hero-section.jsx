@@ -114,9 +114,9 @@ export function HeroSection() {
 │ ╚════╝  ╚═════╝ ╚══════╝╚══════╝    │
 │         Martinez                    │
 │                                     │
-│   > ${t.hero.experiments}: 4           │
-│   > ${t.hero.statusForging}               │
-│   > ${t.hero.lastSpark}               │
+│   > ${t.hero.experiments}: 6           │
+│   > ${t.hero.statusForging}                          │
+│   > ${t.hero.lastSpark}              │
 │                                     │
 └─────────────────────────────────────┘`}</span>
               </pre>
